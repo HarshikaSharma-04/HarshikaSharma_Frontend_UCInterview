@@ -217,6 +217,14 @@
    margin:2.4rem;
    font-size: 1.25rem;  
 }
+.swipe a{
+    text-decoration: none;
+    color:black;
+}
+.swipe a:hover{
+    text-decoration: underline;
+    color:#33363F;
+}
 .circle{
   border-radius: 50%;
   border:2px solid transparent;
@@ -226,6 +234,10 @@
   display:flex;
   justify-content: center;
   align-items: center;
+}
+
+.circle:hover{
+    background-color:#4b86c4 ;
 }
 .online-degree h1, .feedback h1{
    text-align:center;
