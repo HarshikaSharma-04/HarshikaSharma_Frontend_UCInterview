@@ -28,7 +28,7 @@
     align-items: center;
     justify-content: center;
     border:1px solid none;
-    background-color:#3462E7;       
+    background: linear-gradient(to right, #1e88e5, #1565c0);       
     color:white;
     border-radius: 12px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -42,7 +42,7 @@
   color: inherit;
 }
 .nav-button-content:hover{
-    background-color: white;
+    background: white;
     color:black;
 }
 /* Hero Section  */
@@ -188,7 +188,7 @@
     align-items: center;
     justify-content: center;
     border:1px solid transparent;
-    background-color:#093FC8;
+    background: linear-gradient(to right, #1e88e5, #1565c0);
     color:white;
     border-radius: 20px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
@@ -383,7 +383,7 @@
   margin-bottom:4.6rem;
 }
 
-hr {
+.footer hr {
   margin-top:2rem;
 }
 
@@ -399,13 +399,96 @@ hr {
 
 /* Sign Up Page */
 
-.sign-page{
+.signup-pg ,.login-pg{
+  height: 100vh;
+  background: linear-gradient(to top right, #E6F3FC, #ffffff);
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-.sign-img img{
-  height: 35rem;
-  width:30rem;
+
+.sign-page ,.login-page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+  padding: 2rem;
+}
+
+.sign-img img ,.login-img img{
+  width: 35rem;
+  height: 30rem;
+}
+
+.form-container {
+  background: linear-gradient(to right, #4391F1, #C8E4FF);
+  border-radius: 1.2rem;
+  padding: 2rem;
+  width: 22rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.edumate{
+  position: absolute;
+  margin-top: -8rem;
+  margin-left:3.8rem;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #1a237e;
+}
+
+form h3 {
+   text-align: center;
+  color: white;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  background: transparent;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+
+form input::placeholder {
+  color: #f1f1f1;
+}
+
+.button button {
+  width: 100%;
+  padding: 0.75rem;
+  background: linear-gradient(to right,#3462E7, #093FC8);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+.button button:hover {
+  background: linear-gradient(to right, #1565c0, #0d47a1);
+}
+form p{
+  color:white;
+  justify-self: flex-end;
+  margin-top: -0.4rem;
+  margin-bottom: 2.5rem;
+}
+.form-container p{
+  color:white;
+  text-align: center;
+}
+.form-container a{
+  color:#1565c0;
 }
 /* RESPONSIVE */
 /* @media (max-width: 1024px) {
