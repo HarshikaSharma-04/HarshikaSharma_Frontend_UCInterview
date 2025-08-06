@@ -416,8 +416,8 @@
 }
 
 .sign-img img ,.login-img img{
-  width: 35rem;
-  height: 30rem;
+  max-width: 35rem;
+  max-height: 35rem;
 }
 
 .form-container {
@@ -490,62 +490,210 @@ form p{
 .form-container a{
   color:#1565c0;
 }
-/* RESPONSIVE */
-/* @media (max-width: 1024px) {
+/* For Tablet */
+@media (max-width: 1024px) and (min-width: 769px) {
   .nav-content {
-    flex-direction: column;
-    gap: 1rem;
+    flex-direction:column;
     align-items: flex-start;
-  }
-
-  .nav-button {
-    margin-left: 0;
-    margin-top: 1rem;
+    gap: 1rem;
   }
 
   .hero-section {
     flex-direction: column;
-    text-align: center;
     padding: 2rem;
+    text-align: center;
   }
 
   .hero-section img {
     width: 100%;
     height: auto;
-    margin: 2rem 0 0 0;
+    margin-top: 2rem;
   }
 
-  .hero-content h1 {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
+  .trust-frame ul {
+    gap: 10rem;
   }
 
-  .hero-content p {
-    font-size: 14px;
-    margin-bottom: 2rem;
+  .courses {
+    flex-direction: column;
   }
 
-  .nav-button-content {
-    width: auto;
-    padding: 0.5rem 1rem;
+  .community-tab {
+    margin: 2rem;
+    height: auto;
+  }
+
+  .community {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feed-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    flex-direction: row;
+  }
+
+  .border {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+   .sign-page,
+  .login-page {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .sign-img img,
+  .login-img img {
+    max-width: 100%;
+    margin-top:28rem;
+    height: auto;
+  }
+
+  .form-container {
+    width: 90%;
+  }
+
+  .edumate {
+    font-size: 2.5rem;
+    margin-left: 0;
+    margin-top:-6rem; 
+    text-align: center;
+    width: 100%;
+    /* position: static; */
   }
 }
 
-@media (max-width: 600px) {
+
+
+
+/* For Mobile Phones */
+@media (max-width: 768px) {
+  .nav-content {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
   .navbar li {
     margin-right: 2rem;
   }
 
-  .hero-content h1 {
-    font-size: 1.3rem;
+  #logo {
+    font-size: 1.6rem;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .hero-section img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-content {
+    margin-left: 0;
+  }
+
+  .hero-content h2 {
+    font-size: 1.6rem;
   }
 
   .hero-content p {
-    font-size: 13px;
+    font-size: 1.1rem;
+  }
+  .search-box{
+    margin-left: 2rem;
+  }
+  .trust-frame{
+    height: auto;
+  }
+  .trust-frame ul {
+    flex-direction: column;
+    gap: 1.5rem;
   }
 
-  #logo {
-    font-size: 1.2rem;
+  .courses {
+    flex-direction: column;
+  }
+
+  .web, .market, .ds {
+    width: 90%;
+  }
+
+  .explore-button {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .swipe-content {
+    flex-direction: column;
+  }
+
+  .community-tab {
+    flex-direction: column;
+    height: auto;
+    margin: 2rem;
+  }
+
+  .community {
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .feed-content {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .mask2 {
+    width: 90%;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .border {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .sign-page,
+  .login-page {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .sign-img img,
+  .login-img img {
+    max-width: 100%;
+    margin-top:28rem;
+    height: auto;
+  }
+
+  .form-container {
+    width: 90%;
+  }
+
+  .edumate {
+    font-size: 2.5rem;
+    margin-left: 0;
+    margin-top:-6rem; 
+    text-align: center;
+    width: 100%;
+    /* position: static; */
   }
 }
- */
+
